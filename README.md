@@ -4,7 +4,7 @@
 
 This REPO was designed to be a simple calendar application that allows a user to save events for each hour of a typical work day (9AM-5PM) by modifying starter code. This also utilizes the Day.js library to work with date and time.
 
-Web Address Placement ____
+[https://theoarsman.github.io/Work-Day-Scheduler/](https://theoarsman.github.io/Work-Day-Scheduler/)
 
 ![image of Work Day Scheduler](WDS.jpg)
 
