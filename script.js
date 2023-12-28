@@ -35,34 +35,33 @@ $(function () {
     // TODO: Add code to apply the past, present, or future class to each time
    
     function hourTracker() {
-      var currentHour = moment().hour();
+      var currentHour = dayjs().hour();
 
       $(".time-block").each(function () {
         var blockHour = parseInt($(this).attr("id").split("hour")[1]);
-        console.log(blockHour, currentHour)
 
         if (blockHour < currentHour) {
           $(this).addClass("past");
-          $(this).removeClass("future");
-          $(this).removeClass("present");
         }
         else if (blockHour === currentHour) {
           $(this).removeClass("past");
           $(this).addClass("present");
-          $(this).removeClass("future");
         }
         else {
           $(this).removeClass("present");
           $(this).removeClass("past");
           $(this).addClass("future");
         }
-      })
+      });
     }
+
+    hourTracker();
 
     // TODO: Add code to get any user input that was saved in localStorage and set
     // the values of the corresponding textarea elements. HINT: How can the id
     // attribute of each time-block be used to do this?
     //
 
-  };
-});
+  }
+);
+
